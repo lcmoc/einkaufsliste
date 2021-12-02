@@ -19,9 +19,8 @@ const Input = () => {
   const handleDelete = () => {};
 
   useEffect(() => {
-    const json = JSON.stringify(fieldvalue);
-    localStorage.setItem("todos", json);
-  }, [fieldvalue]);
+    localStorage.setItem("shoppingList", JSON.stringify(addValue));
+  }, [addValue]);
 
   return (
     <div className="flex items-start justify-start">
@@ -37,12 +36,6 @@ const Input = () => {
       <button onClick={() => handleDelete()}>
         <img src={trash} alt="trashcan" className="ml-20 w-6 h-6" />
       </button>
-      <ul>
-        {addValue.map((item) => {
-          return <li>{item}</li>;
-        })}
-      </ul>
-      {/* <List listItems={addValue} /> */}
     </div>
   );
 };
