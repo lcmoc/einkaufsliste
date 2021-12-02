@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .p-text {
+      @apply text-lg text-gray-500 font-bold
+    }
+  
+    .MainContainer {
+      @apply flex flex-col items-center justify-center
+    }
+  }

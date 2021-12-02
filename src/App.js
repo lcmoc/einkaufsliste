@@ -1,11 +1,13 @@
 import './App.css';
 
+import Header from './components/Header/inex';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header"></header>
       <body>
-        <h1 className="text-blue-500">Einkaufsliste</h1>
+        <Header />
       </body>
     </div>
   );
